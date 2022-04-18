@@ -1,0 +1,174 @@
+
+
+
+@media only screen and (max-width: 600px) {
+  .background-image{
+  
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 200px;
+}
+}
+
+@media only screen and (max-width: 2000px) {
+  .background-image{
+    
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+  }
+  }
+
+input{
+  width: 80%;
+  height: 40px;
+  border: black;
+  font-size: large;
+
+}
+
+.text{
+padding:10%;
+color:whitesmoke;
+}
+a{
+  padding-right: 10%;
+ color: white;
+}
+
+.images{
+  cursor: pointer;
+  width: 250px;
+  height: 200px;
+}
+li{
+  list-style: none;
+}
+
+@media only screen and (max-width: 2000px) {
+.grid{
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  grid-template-rows:  auto;
+  grid-gap: 10px;
+  
+}
+.font1{
+  font-size: xx-large; 
+  font-weight: bold;
+ }  
+ .font2{
+  font-size: large; 
+  font-weight: bold;
+ }  
+}
+
+@media only screen and (max-width: 900px) {
+  .grid{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    
+  }
+  .font1{
+    font-size: xx-large; 
+    font-weight: bold;
+   }  
+   .font2{
+    font-size: large; 
+    font-weight: bold;
+   }  
+  }
+
+  @media only screen and (max-width: 700px) {
+    .grid{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows:  auto;
+      grid-gap: 10px;
+      
+    }
+    .font1{
+     font-size: medium; 
+     font-weight: bold;
+    }  
+  }
+    
+
+@media only screen and (max-width: 500px) {
+.grid{
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  grid-template-rows: auto;
+}
+}
+.button{
+  width: stretch;
+  background-color: violet;
+  cursor: pointer;
+  color: white;
+}
+.title{
+  font-size: 25px;
+  color: #61dafb;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+/*
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+
+.left-column {
+  width: 65%;
+  position: relative;
+}
+ 
+.right-column {
+  width: 40%;
+  margin-top: 10px;
+  margin-left: 30%;
+  position: absolute;
+}
+
+.left-column img {
+  cursor: pointer;
+  width: 40%;
+  position:absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.bookTitle {
+  margin:5px;
+  font-size: larger;
+  position: absolute
+}
+
+.author{
+  margin-top: 8%;
+  display: inline-block;
+}
+.language {
+  margin-top:3%;
+}*/
