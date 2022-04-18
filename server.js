@@ -12,7 +12,7 @@ app.post('/api/googlelogin',function(req,res) {
     client.verifyIdToken({idToken: tokenId,audience: "860555463282-79huvv0rv93trtrnj3nbv7tt0g3giokr.apps.googleusercontent.com" }).then(response => {
         const {email_verified, name, email}=response.getPayload;
         console.log(response.payload)
-    res.send('hello')
+        res.send('/search')
     })
 })
 

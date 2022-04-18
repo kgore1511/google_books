@@ -6,10 +6,9 @@ import {BrowserRouter,Route,Link} from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-  <Route path='/' exact={true} component={homeScreen}></Route>
   <Route path='/search' component={BookScreen}></Route>
   <Route path='/Book/:id' component={BookDetailScreen}></Route>
- 
+  <Route path='/' exact={true} component={homeScreen}></Route>
     </BrowserRouter>
   );
 }
