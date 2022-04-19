@@ -1,20 +1,23 @@
 const express=require('express');
-const {OAuth2Client}=require('google-auth-library');
-const client=new OAuth2Client("860555463282-79huvv0rv93trtrnj3nbv7tt0g3giokr.apps.googleusercontent.com")
 const app=express();
+const mongoose = require("mongoose");
+require("dotenv").config();
 app.use(express.json())
-app.use(express.urlencoded())
+app.use("/user", require("./routes/userRouter"));
+app.use('/book',require('./routes/bookRouter'))
 const port=process.env.Port ||5000
 
-app.post('/api/googlelogin',function(req,res) {
-    console.log("chala");
-    var tokenId=req.body.tokenId;
-    client.verifyIdToken({idToken: tokenId,audience: "860555463282-79huvv0rv93trtrnj3nbv7tt0g3giokr.apps.googleusercontent.com" }).then(response => {
-        const {email_verified, name, email}=response.getPayload;
-        console.log(response.payload)
-        res.send('/search')
-    })
-})
+mongoose.connect(
+    process.env.URI,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    },
+    (err) => {
+
+      if (err) throw err;
+    }
+  );
 
 if(process.env.NODE_ENV=='production') {
     const path=require('path')

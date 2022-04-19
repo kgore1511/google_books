@@ -130,45 +130,25 @@ html, body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
-/*
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px;
-  display: flex;
-}
-
-.left-column {
-  width: 65%;
-  position: relative;
-}
- 
-.right-column {
-  width: 40%;
-  margin-top: 10px;
-  margin-left: 30%;
-  position: absolute;
-}
-
-.left-column img {
-  cursor: pointer;
-  width: 40%;
-  position:absolute;
-  left: 0;
-  top: 0;
-  transition: all 0.3s ease;
-}
-
 .bookTitle {
-  margin:5px;
-  font-size: larger;
-  position: absolute
+  font-weight:bolder;
+  color: tomato;
 }
 
-.author{
-  margin-top: 8%;
-  display: inline-block;
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 75ch;
 }
-.language {
-  margin-top:3%;
-}*/
+
+.span1 {
+  font-size: large;
+  font-weight: bold;
+  color:burlywood;
+}
+
+.span2 {
+  font-size: 15px;
+  color:deepskyblue
+}

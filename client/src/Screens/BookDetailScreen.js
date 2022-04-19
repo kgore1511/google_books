@@ -13,20 +13,21 @@ export function BookDetailScreen(props) {
         <div>
             {
             book && book.imageLinks && book.imageLinks.smallThumbnail &&
-            <main class='row'><div className='col-md-4'><img className="image-responsive" style={{width:'100%',margin:'10px'}} src={book.imageLinks.smallThumbnail} /></div>
+            <main class='row'><div className='col-md-4'><img className="image-responsive" style={{width:'90%',margin:'10px'}} src={book.imageLinks.smallThumbnail} /></div>
             <div className='col-md-8'><h1 className='bookTitle'>{book.title}</h1>
-            <div><h3>Authors :</h3>{book.authors.map(author=>
-                <h5>{author}</h5>
+            <div><span className='span1'>Authors :</span><span className='span2'>{book.authors && book.authors.map(author=>
+                <span>{author}</span>
                 )}
+                </span>
             </div>
-            <div ><h3>Language: {book.language} </h3>
-             <h3>MaturityRating :{book.maturityRating}</h3></div>
-             <h3>Page Count: {book.pageCount}</h3>
-             <h3>Print Type: {book.printType}</h3>
-             <h3>Published Date: {book.publishedDate}</h3>
-             <h3>Publisher: {book.publisher}</h3>
+            <div><span className='span1'>Language: </span><span className='span2'>{book.language}</span>
+             <div><span className='span1'>MaturityRating :</span><span className='span2'>{book.maturityRating}</span></div>
+             <div> <span className='span1'>Page Count:</span><span className='span2'> {book.pageCount}</span></div>
+             <div> <span className='span1'>Print Type:</span><span className='span2'> {book.printType}</span></div>
+             <div> <span className='span1'>Published Date:</span><span className='span2'>{book.publishedDate}</span></div>
+             <div> <span className='span1'>Publisher:</span><span className='span2'> {book.publisher}</span></div>
              </div>
-           
+           </div>
             
            </main>
 }
