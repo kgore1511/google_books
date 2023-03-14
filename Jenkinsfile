@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'cd client'
                 sh 'npm install'
+                sh 'npm start'
             }
         }
     }
