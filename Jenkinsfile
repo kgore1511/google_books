@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh "cd client"
     sh "pwd"
     dir('your-sub-directory') {
       sh "pwd"
