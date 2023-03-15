@@ -3,10 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'cd client'
-                sh 'npm install'
-                sh 'npm start'
-            }
+    sh "pwd"
+    dir('your-sub-directory') {
+      sh "pwd"
+    }
+    sh "pwd"
+} 
         }
     }
 }
