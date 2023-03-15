@@ -6,7 +6,7 @@ pipeline {
     sh "pwd"
     dir('client') {
       sh "pwd"
-        sh "dir"
+        sh "ll"
     }
     sh "pwd"
 } 
