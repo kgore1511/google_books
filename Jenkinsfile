@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('build') {
             steps {
-    sh "pwd"
     dir('client') {
       sh "pwd"
         sh "npm install"
